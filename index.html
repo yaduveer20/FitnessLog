@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/logo1.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script 
+    defer
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="">
+    </script>
+
+    <!-- <script defer src="other.js"></script> -->
+    <script defer src="script.js"></script>
+    <title>FitnessLog - Log your favourite workout locations.</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="logo1.png" alt="Logo" class="logo" />
+
+      <ul class="workouts">
+        <form class="work hidden">
+          <div class="work-col">
+            <label class="work-label">Type</label>
+            <select class="work-input work-input-type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+              <option value="trekking">Trekking</option>
+            </select>
+          </div>
+          <div class="work-col">
+            <label class="work-label">Distance</label>
+            <input class="work-input work-input-distance" placeholder="km" />
+          </div>
+          <div class="work-col">
+            <label class="work-label">Duration</label>
+            <input
+              class="work-input work-input-duration"
+              placeholder="min"
+            />
+          </div>
+
+          <div class="work-col cadence">
+            <label class="work-label">Cadence</label>
+            <input
+              class="work-input work-input-cadence"
+              placeholder="step/min"
+            />
+          </div>
+          <div class="work-col elevation work-col-hidden">
+            <label class="work-label">Elev Gain</label>
+            <input
+              class="work-input work-input-elevation"
+              placeholder="meters"
+            />
+          </div>
+          <button type='submit' class="work-btn">OK</button>
+        </form>
+      </ul>
+
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
