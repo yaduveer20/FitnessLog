@@ -1,0 +1,24 @@
+{
+  "name": "fitness-log",
+  "version": "1.0.0",
+  "description": "Log your fitness activities directly on a map.",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaduveer20/FitnessLog.git"
+  },
+  "author": "Gopal Khatri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaduveer20/FitnessLog/issues"
+  },
+  "homepage": "https://github.com/yaduveer20/FitnessLog#readme",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
